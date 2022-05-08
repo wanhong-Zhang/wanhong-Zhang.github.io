@@ -1,33 +1,25 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>首页——青海大学智能控制实验室</title>
+<title>实验室简介——青海大学智能控制实验室</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <script src="js/jquery.min.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-		});
-	});
-</script>
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }</script>
 <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
 </script>
 </head>
 <body>
 <div class="header">
   <div class="container">
-    <div class="logo"> <a href="https://www.qhu.edu.cn/"><img src="images/logo.png" alt="Nova"></a> </div>
+    <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Nova"></a> </div>
     <div class="menu"> <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
       <ul class="nav" id="nav">
-        <li class="current"><a href="index.html">首页</a></li>
+        <li><a href="index.html">首页</a></li>
         <li><a href="Introduction.html">实验室简介</a></li>
-        <li><a href="Team.html">科研团队</a></li>
+        <li class="current"><a href="Team.html">科研团队</a></li>
 	      <li><a href="Research_direction.html">研究方向</a></li>
         <li><a href="Communicate.html">学术交流</a></li>
 	      <li><a href="Share.html">资源分享</a></li>
@@ -39,46 +31,63 @@
     <div class="clearfix"> </div>
   </div>
 </div>
-<div class="banner text-center">
+<div class="about">
   <div class="container">
-    <div class="banner-info">
-      <h1>青海大学智能控制实验室</h1>
-      <p>Qinghai University Intelligent Control Laboratory<br></p>
-      <label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><i class="fa fa-angle-double-down fa-4x"></i></a></label>
+    <section class="title-section">
+      <h1 class="title-header">科研团队</h1>
+    </section>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 about_left">
+      <h3 class="m_2">Morbi lectus risus iaculisvel</h3>
+      <ul class="about_grid1 about_box">
+        <li class="about_img"><img src="images/a1.jpg" class="img-responsive" alt=""/></li>
+        <li class="about_desc">
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+        </li>
+      </ul>
+      <h3 class="m_2">Curabitur sodales ligula in libero</h3>
+      <ul class="about_grid1 about_box">
+        <li class="about_img"><img src="images/a2.jpg" class="img-responsive" alt=""/></li>
+        <li class="about_desc">
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3 class="m_2">Sed accumsan nunc</h3>
+      <div class="list styled custom-list">
+        <ul>
+          <li><i class="fa fa-graduation-cap fa-3x fa-fw pull-left"></i>
+            <h5>Nulla quis sem at nibh elementum</h5>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum praesent mauris.</p>
+          </li>
+          <li><i class="fa fa-users fa-3x fa-fw pull-left"></i>
+            <h5>Quis sem at nibh elementum imperdiet</h5>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum praesent mauris.</p>
+          </li>
+          <li><i class="fa fa-bar-chart fa-3x fa-fw pull-left"></i>
+            <h5>Nulla quis sem at nibh elementum</h5>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum praesent mauris.</p>
+          </li>
+          <li><i class="fa fa-leaf fa-3x fa-fw pull-left"></i>
+            <h5>Quis sem at nibh elementum imperdiet</h5>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum praesent mauris.</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 <div class="main">
-<div class="content_white">
-  <h2>欢迎加入我们的团队！</h2>
-  <p>Welcome to our team!</p>
-</div>
-<div class="featured_content" id="feature">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-cloud-download fa-3x"></i>
-        <h3 class="m_1"><a href="#">资源下载</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-shield fa-3x"></i>
-        <h3 class="m_1"><a href="#">师资队伍</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-flask fa-3x"></i>
-        <h3 class="m_1"><a href="#">学术交流</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-      <div class="col-md-3 feature_grid2"> <i class="fa fa-bar-chart fa-3x"></i>
-        <h3 class="m_1"><a href="#">科研成果</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-    </div>
-  </div>
-</div>
 <div class="container">
   <div class="content_white">
-    <h2>学术前沿新闻</h2>
-    <p>Academic Frontier News</p>
+    <h2>Vel ad aliquid copiosae</h2>
+    <p>No cum agam appareat vituperata ateum iusto paulo dignissim</p>
   </div>
   <div class="testimonial">
     <div class="row testimonial_top">
