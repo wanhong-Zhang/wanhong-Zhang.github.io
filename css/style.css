@@ -137,10 +137,11 @@ body a {
 }
 .banner {
 	background: url(../images/pic_cover.jpg) #96b9bd no-repeat center;
-	min-height: 500px;
+	min-height: 600px;
 }
 .banner-info {
-	margin-top: 8em;
+	margin: auto;
+	margin-top: 7em;
 }
 .banner-info h1 {
 	font-size: 4em;
@@ -174,6 +175,7 @@ a.banner-btn span:hover {
 	opacity: 0.9;
 }
 .content_white {
+	margin: auto;
 	text-align: center;
 	padding: 3em 0;
 }
@@ -192,10 +194,10 @@ a.banner-btn span:hover {
 	background: #f6f6f6;
 }
 .feature_grid1 {
-	width: 23.5%;
-	margin-right: 2em;
+	width: 24.7%;
+	margin-right: 1em;
 	border-right: 1px solid #E6E6E6;
-	padding: 4em 2em 4em 0;
+	padding: 4em 2em 2em 0;
 }
 .feature_grid2 {
 	width: 21%;
@@ -214,7 +216,7 @@ h3.m_1 a:hover {
 	color: #e4551d;
 }
 p.m_2 {
-	color: #666;
+	color: rgb(11, 11, 11);
 	font-size: 0.95em;
 	line-height: 1.5em;
 	margin-bottom: 1em;
@@ -431,7 +433,7 @@ ul.social_left li.fb_text {
 }
 h3.m_2 {
 	font-size: 1.7em;
-	font-weight: 500;
+	font-weight: bold;
 	color: #666;
 	margin-bottom: 1em;
 }
@@ -441,13 +443,18 @@ ul.about_grid1 {
 }
 ul.about_grid1 li.about_img {
 	float: left;
-	width: 32.333%;
-	margin-right: 1.5em;
+	width: 55%;
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-bottom: 3em;
 }
 ul.about_grid1 li.about_desc {
+	/* background: #afcc7c;
+	position: relative; */
 	float: left;
-	width: 63.777%;
-	padding-right: 25px;
+	width: 37%;
+	padding-left: 2%;
+	
 }
 ul.about_grid1 li.about_desc h5 a {
 	color: #555;
@@ -458,10 +465,11 @@ ul.about_grid1 li.about_desc h5 a:hover {
 	text-decoration: none;
 }
 ul.about_grid1 li.about_desc p {
-	color: #999;
-	font-size: 0.9em;
+	font-weight: bold;
+	color: rgb(74, 71, 71);
+	font-size: 1.1em;
 	line-height: 1.5em;
-	margin-bottom: 2em;
+	margin-top: 3em;
 }
 .about_btn {
 	display: inline-block;

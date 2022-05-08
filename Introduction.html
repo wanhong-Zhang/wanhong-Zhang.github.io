@@ -31,6 +31,8 @@
     <div class="clearfix"> </div>
   </div>
 </div>
+
+
 <div class="about">
   <div class="container">
     <section class="title-section">
@@ -38,27 +40,35 @@
     </section>
   </div>
 </div>
+
+
 <div class="container">
   <div class="row">
-    <div class="col-md-8 about_left">
-      <h3 class="m_2">Morbi lectus risus iaculisvel</h3>
+    <div class="col-md-12 about_left">
+      <h3 class="m_2">智能控制简介</h3>
       <ul class="about_grid1 about_box">
-        <li class="about_img"><img src="images/a1.jpg" class="img-responsive" alt=""/></li>
+        <li class="about_img"><img src="images/Intro_img1.jpg" class="img-responsive" alt="Picture damage!"/></li>
         <li class="about_desc">
-          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
-          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-        </li>
-      </ul>
-      <h3 class="m_2">Curabitur sodales ligula in libero</h3>
-      <ul class="about_grid1 about_box">
-        <li class="about_img"><img src="images/a2.jpg" class="img-responsive" alt=""/></li>
-        <li class="about_desc">
-          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+          <p>
+            智能控制是具有智能信息处理、智能信息反馈和智能控制决策的控制方式，是控制理论发展的高级阶段，主要用来解决那些用传统方法难以解决的复杂系统的控制问题。智能控制作为一门交叉学科，是以控制理论、计算机科学、人工智能为研究基础，将其与控制方式结合，构成风格和功能各异的智能控制系统和智能控制器。</p>
         </li>
       </ul>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-12 about_left">
+      <h3 class="m_2">关于实验室</h3>
+      <ul class="about_grid1 about_box">
+        <li class="about_img"><img src="images/Intro_img1.jpg" class="img-responsive" alt="Image "/></li>
+        <li class="about_desc">
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- <div class="col-md-4">
       <h3 class="m_2">Sed accumsan nunc</h3>
       <div class="list styled custom-list">
         <ul>
@@ -80,7 +90,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
+
+
   </div>
 </div>
 <div class="main">
@@ -186,4 +198,62 @@
   </div>
 </div>
 </body>
+<script>
+  var a_idx = 0;
+  jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+  var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+  var $i = $("<span/>").text(a[a_idx]);
+          a_idx = (a_idx + 1) % a.length;
+  var x = e.pageX,
+          y = e.pageY;
+          $i.css({
+  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+  "top": y - 20,
+  "left": x,
+  "position": "absolute",
+  "font-weight": "bold",
+  "color": "#ff6651"
+          });
+          $("body").append($i);
+          $i.animate({
+  "top": y - 180,
+  "opacity": 0
+          },
+          1500,
+  function() {
+              $i.remove();
+          });
+      });
+  });
+  </script>
+  <script>
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+    var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+    var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+    var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+    "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+    "top": y - 20,
+    "left": x,
+    "position": "absolute",
+    "font-weight": "bold",
+    "color": "#ff6651"
+            });
+            $("body").append($i);
+            $i.animate({
+    "top": y - 180,
+    "opacity": 0
+            },
+            1500,
+    function() {
+                $i.remove();
+            });
+        });
+    });
+    </script>
 </html>

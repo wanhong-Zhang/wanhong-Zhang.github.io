@@ -57,21 +57,21 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-md-3 feature_grid1"> <i class="fa fa-cloud-download fa-3x"></i>
-        <h3 class="m_1"><a href="#">资源下载</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
+        <h3 class="m_1"><a>资源下载</a></h3>
+        <p class="m_2">智能控制实验室相关资源下载</p>
+        <a href="Share.html" class="feature_btn">More</a> </div>
       <div class="col-md-3 feature_grid1"> <i class="fa fa-shield fa-3x"></i>
-        <h3 class="m_1"><a href="#">师资队伍</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
+        <h3 class="m_1"><a>师资队伍</a></h3>
+        <p class="m_2">了解我们团队详情</p>
+        <a href="Team.html" class="feature_btn">More</a> </div>
       <div class="col-md-3 feature_grid1"> <i class="fa fa-flask fa-3x"></i>
-        <h3 class="m_1"><a href="#">学术交流</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
+        <h3 class="m_1"><a>学术交流</a></h3>
+        <p class="m_2">与我们进行学术上的交流</p>
+        <a href="Communicate.html" class="feature_btn">More</a> </div>
       <div class="col-md-3 feature_grid2"> <i class="fa fa-bar-chart fa-3x"></i>
-        <h3 class="m_1"><a href="#">科研成果</a></h3>
-        <p class="m_2">Lorem ipsum dolor sit amet, facilisis egestas sodales non luctus, sem quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
+        <h3 class="m_1"><a>科研成果</a></h3>
+        <p class="m_2">展示智能控制实验室各项科研成果</p>
+        <a href="Research_direction.html" class="feature_btn">More</a> </div>
     </div>
   </div>
 </div>
@@ -177,4 +177,33 @@
   </div>
 </div>
 </body>
+<script>
+  var a_idx = 0;
+  jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+  var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+  var $i = $("<span/>").text(a[a_idx]);
+          a_idx = (a_idx + 1) % a.length;
+  var x = e.pageX,
+          y = e.pageY;
+          $i.css({
+  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+  "top": y - 20,
+  "left": x,
+  "position": "absolute",
+  "font-weight": "bold",
+  "color": "#ff6651"
+          });
+          $("body").append($i);
+          $i.animate({
+  "top": y - 180,
+  "opacity": 0
+          },
+          1500,
+  function() {
+              $i.remove();
+          });
+      });
+  });
+  </script>
 </html>
