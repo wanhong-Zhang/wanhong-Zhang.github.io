@@ -136,15 +136,15 @@ body a {
 }
 }
 .banner {
-	background: url(../images/banner.jpg) #96b9bd no-repeat center;
+	background: url(../images/pic_cover.jpg) #96b9bd no-repeat center;
 	min-height: 500px;
 }
 .banner-info {
 	margin-top: 8em;
 }
 .banner-info h1 {
-	font-size: 3em;
-	color: #555;
+	font-size: 4em;
+	color: rgb(12, 11, 11);
 	line-height: 1.4em;
 	margin: 0em;
 	letter-spacing: 1px;
