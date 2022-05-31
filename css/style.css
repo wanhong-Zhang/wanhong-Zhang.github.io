@@ -177,7 +177,7 @@ a.banner-btn span:hover {
 .content_white {
 	margin: auto;
 	text-align: justify;
-	padding: 20em 3;
+	padding: 3em 0;
 }
 .content_white h2 {
 	font-size: 2em;
@@ -190,7 +190,7 @@ a.banner-btn span:hover {
 	font-size: 1.5em;
 	text-align: justify;
 	font-weight: 300;
-	line-height: 0.6em;
+	line-height: 2em;
 }
 .featured_content {
 	background: #f6f6f6;
