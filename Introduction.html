@@ -32,6 +32,7 @@
   </div>
 </div>
 
+
 <div class="about">
   <div class="container">
     <section class="title-section">
@@ -39,7 +40,6 @@
     </section>
   </div>
 </div>
-
 
 
 <div class="container">
@@ -54,105 +54,7 @@
   </div>
 </div>
 
-
-
-
-  </div>
-</div>
-<div class="main">
-<div class="container">
-  <div class="content_white">
-  </div>
-  <div class="testimonial">
-    <div class="row testimonial_top">
-      <div class="col-md-6">
-        <ul class="test_box">
-          <li class="test_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/> </li>
-          <li class="test_desc">
-            <h4><a href="#">Impetus tincidunt</a></h4>
-            <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-          </li>
-          <div class="clearfix"> </div>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="test_box">
-          <li class="test_img"><img src="images/pic2.jpg" class="img-responsive" alt=""/> </li>
-          <li class="test_desc">
-            <h4><a href="#">Paulo dignissim</a></h4>
-            <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-          </li>
-          <div class="clearfix"> </div>
-        </ul>
-      </div>
-    </div>
-    <div class="row testimonial_bottom">
-      <div class="col-md-6">
-        <ul class="test_box">
-          <li class="test_img"><img src="images/pic3.jpg" class="img-responsive" alt=""/> </li>
-          <li class="test_desc">
-            <h4><a href="#">Vituperata ateum</a></h4>
-            <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-          </li>
-          <div class="clearfix"> </div>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="test_box">
-          <li class="test_img"><img src="images/pic4.jpg" class="img-responsive" alt=""/> </li>
-          <li class="test_desc">
-            <h4><a href="#">Appareat vituperat</a></h4>
-            <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-          </li>
-          <div class="clearfix"> </div>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="footer">
-  <div class="footer_midle">
-    <div class='container'>
-      <div class="row">
-        <div class="col-md-3">
-          <ul class="social_left">
-            <li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-            <li class="fb_text">
-              <h4><a href="#">Follow us on Facebook</a></h4>
-            </li>
-            <div class="clearfix"> </div>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="social_left">
-            <li class="facebook"><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-            <li class="fb_text">
-              <h4><a href="#">Follow us on Twitter</a></h4>
-            </li>
-            <div class="clearfix"> </div>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="social_left">
-            <li class="facebook"><a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
-            <li class="fb_text">
-              <h4><a href="#">Follow us on Google +</a></h4>
-            </li>
-            <div class="clearfix"> </div>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="social_left">
-            <li class="facebook"><a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-            <li class="fb_text">
-              <h4><a href="#">Follow us on LinkedIn</a></h4>
-            </li>
-            <div class="clearfix"> </div>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
   <div class="footer_bottom">
     <div class="copy">
       <p>Copyright &copy; 2022. 青海大学 All rights reserved.<a target="_blank" href="https://www.qhu.edu.cn/"></a></p>
@@ -160,5 +62,33 @@
   </div>
 </div>
 </body>
+<script>
+  var a_idx = 0;
+  jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+  var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+  var $i = $("<span/>").text(a[a_idx]);
+          a_idx = (a_idx + 1) % a.length;
+  var x = e.pageX,
+          y = e.pageY;
+          $i.css({
+  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+  "top": y - 20,
+  "left": x,
+  "position": "absolute",
+  "font-weight": "bold",
+  "color": "#ff6651"
+          });
+          $("body").append($i);
+          $i.animate({
+  "top": y - 180,
+  "opacity": 0
+          },
+          1500,
+  function() {
+              $i.remove();
+          });
+      });
+  });
   </script>
 </html>
