@@ -135,7 +135,7 @@
           <ul class="social_left">
             <li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
             <li class="fb_text">
-              <h4><a href="#">Follow us on Facebook</a></h4>
+              <h4><a href="https://sci-hub.se/">SCI-HUB</a></h4>
             </li>
             <div class="clearfix"> </div>
           </ul>
@@ -144,7 +144,7 @@
           <ul class="social_left">
             <li class="facebook"><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
             <li class="fb_text">
-              <h4><a href="#">Follow us on Twitter</a></h4>
+              <h4><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore</a></h4>
             </li>
             <div class="clearfix"> </div>
           </ul>
@@ -153,7 +153,7 @@
           <ul class="social_left">
             <li class="facebook"><a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
             <li class="fb_text">
-              <h4><a href="#">Follow us on Google +</a></h4>
+              <h4><a href="https://ietresearch.onlinelibrary.wiley.com/">The Institution of Engineering and Technology</a></h4>
             </li>
             <div class="clearfix"> </div>
           </ul>
@@ -162,7 +162,7 @@
           <ul class="social_left">
             <li class="facebook"><a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
             <li class="fb_text">
-              <h4><a href="#">Follow us on LinkedIn</a></h4>
+              <h4><a href="https://www.tsinghua.edu.cn/">清华大学</a></h4>
             </li>
             <div class="clearfix"> </div>
           </ul>
@@ -177,33 +177,4 @@
   </div>
 </div>
 </body>
-<script>
-  var a_idx = 0;
-  jQuery(document).ready(function($) {
-      $("body").click(function(e) {
-  var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
-  var $i = $("<span/>").text(a[a_idx]);
-          a_idx = (a_idx + 1) % a.length;
-  var x = e.pageX,
-          y = e.pageY;
-          $i.css({
-  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
-  "top": y - 20,
-  "left": x,
-  "position": "absolute",
-  "font-weight": "bold",
-  "color": "#ff6651"
-          });
-          $("body").append($i);
-          $i.animate({
-  "top": y - 180,
-  "opacity": 0
-          },
-          1500,
-  function() {
-              $i.remove();
-          });
-      });
-  });
-  </script>
 </html>
