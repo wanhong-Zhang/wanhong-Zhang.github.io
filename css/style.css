@@ -174,7 +174,7 @@ a.banner-btn span {
 a.banner-btn span:hover {
 	opacity: 0.9;
 }
-.content_white {
+.content_white h1 {
 	margin: auto;
 	text-align: justify;
 	padding: 3em 0;
